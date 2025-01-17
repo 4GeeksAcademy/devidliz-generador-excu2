@@ -1,29 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <title>Generador de Excusas Aleatorias</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div class="container">
+      <!-- Aquí agregamos el contenedor -->
+      <h1>Generador de Excusas Aleatorias</h1>
+
+      <label for="quien">Quién:</label>
+      <input type="text" id="quien" />
+      <button id="agregar-quien">Agregar</button>
+
+      <br />
+
+      <label for="accion">Acción:</label>
+      <input type="text" id="accion" />
+      <button id="agregar-accion">Agregar</button>
+
+      <br />
+
+      <label for="que">Qué pasó:</label>
+      <input type="text" id="que" />
+      <button id="agregar-que">Agregar</button>
+
+      <br />
+
+      <label for="lugar">Lugar:</label>
+      <input type="text" id="lugar" />
+      <button id="agregar-lugar">Agregar</button>
+
+      <br />
+
+      <button id="generar-excusa">Generar Excusa</button>
+      <p id="excusa"></p>
     </div>
+    <!-- Fin del contenedor -->
+
+    <script src="app.js"></script>
   </body>
 </html>
